@@ -34,3 +34,17 @@
 如果审查范围较大，请提供目标 URL、本地文件、截图、电子书／PDF、预期语言，以及需要检查的设备或页面尺寸。
 
 审查结果应包含具体问题、受影响范围、证据、对应的 W3C 需求、影响与修正建议。
+
+## Codex Plugin
+
+从 GitHub 安装：
+
+```bash
+codex plugin marketplace add sichengchen/cjk-layout-audit-skill
+```
+
+或从本地 checkout 安装：
+
+```bash
+codex plugin marketplace add /path/to/cjk-layout-audit-skill
+```

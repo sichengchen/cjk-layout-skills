@@ -34,3 +34,17 @@
 若稽核範圍較大，請提供目標 URL、本機檔案、螢幕截圖、電子書／PDF、預期語言，以及需要檢查的裝置或頁面尺寸。
 
 稽核結果應包含具體問題、受影響範圍、證據、對應的 W3C 需求、影響與修正建議。
+
+## Codex Plugin
+
+從 GitHub 安裝：
+
+```bash
+codex plugin marketplace add sichengchen/cjk-layout-audit-skill
+```
+
+或從本機 checkout 安裝：
+
+```bash
+codex plugin marketplace add /path/to/cjk-layout-audit-skill
+```
