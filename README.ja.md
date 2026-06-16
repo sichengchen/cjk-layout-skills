@@ -45,4 +45,6 @@ codex plugin marketplace add sichengchen/codex-plugins
 
 その後、`cjk-text-layout` プラグインをインストールしてください。
 
+---
+
 この README は英語で作成され、LLM によって日本語に翻訳されました。
