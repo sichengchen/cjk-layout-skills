@@ -1,5 +1,7 @@
 # CJK Layout Audit Skill
 
+[繁體中文](README.zh-Hant.md) | [简体中文](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+
 This repository contains the `cjk-layout-audit` Codex skill for auditing Chinese, Japanese, and Korean text layout in frontend pages, rendered webpages, EPUB/ebook content, PDFs, screenshots, and source files.
 
 The skill is based on W3C text layout requirements:
