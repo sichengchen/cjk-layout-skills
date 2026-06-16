@@ -1,0 +1,4 @@
+interface:
+  display_name: "CJK Layout Audit"
+  short_description: "Audit Chinese, Japanese, and Korean text layout"
+  default_prompt: "Use $cjk-layout-audit to audit this CJK webpage or ebook for W3C text layout issues."
