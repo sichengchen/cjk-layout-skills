@@ -1,0 +1,38 @@
+{
+  "name": "cjk-text-layout",
+  "version": "0.1.0",
+  "description": "Audit Chinese, Japanese, and Korean text layout against W3C requirements.",
+  "author": {
+    "name": "Sicheng Chen",
+    "url": "https://github.com/sichengchen"
+  },
+  "homepage": "https://github.com/sichengchen/cjk-layout-audit-skill",
+  "repository": "https://github.com/sichengchen/cjk-layout-audit-skill",
+  "license": "MIT",
+  "keywords": [
+    "cjk",
+    "typography",
+    "layout",
+    "localization",
+    "accessibility"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CJK Text Layout",
+    "shortDescription": "Audit CJK typography and layout against W3C requirements.",
+    "longDescription": "CJK Text Layout helps agents review Chinese, Japanese, and Korean rendered text for locale-aware typography issues including line breaking, punctuation placement, ruby annotations, vertical writing, mixed-script spacing, justification, and ebook or PDF page layout.",
+    "developerName": "Sicheng Chen",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Analyze",
+      "Review",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Audit this CJK webpage for W3C text layout issues.",
+      "Check this EPUB or PDF for Japanese, Chinese, or Korean layout defects.",
+      "Review CJK line breaking, punctuation, ruby, spacing, and vertical text."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
