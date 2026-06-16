@@ -1,8 +1,8 @@
-# CJK Layout Audit Skill
+# CJK Layout Audit Agent Skill
 
 [English](README.md) | [简体中文](README.zh-Hans.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-本儲存庫包含 `cjk-layout-audit` Codex skill，用於依據 W3C 文字排版需求，稽核前端頁面、已渲染網頁、EPUB/電子書、PDF、螢幕截圖與原始碼中的中文、日文與韓文文字排版。
+本儲存庫包含 `cjk-layout-audit` agent skill，用於依據 W3C 文字排版需求，稽核前端頁面、已渲染網頁、EPUB/電子書、PDF、螢幕截圖與原始碼中的中文、日文與韓文文字排版。
 
 此 skill 依據以下 W3C 文件：
 
@@ -20,7 +20,7 @@
 
 ## 使用方式
 
-在 Codex 中以下列方式呼叫 skill：
+在 Codex 等 agent runtime 中，可以下列方式呼叫 skill：
 
 ```text
 Use $cjk-layout-audit to audit this CJK webpage or ebook for W3C text layout issues.
@@ -47,7 +47,7 @@ python3 -B cjk-layout-audit/scripts/cjk_layout_probe.py --json path/to/file.html
 PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile cjk-layout-audit/scripts/cjk_layout_probe.py
 ```
 
-當 Python 相依套件可用時，可執行官方 skill validator：
+當 Python 相依套件可用時，可執行 Codex-compatible skill validator：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py cjk-layout-audit

@@ -1,8 +1,8 @@
-# CJK Layout Audit Skill
+# CJK Layout Audit Agent Skill
 
 [English](README.md) | [繁體中文](README.zh-Hant.md) | [简体中文](README.zh-Hans.md) | [日本語](README.ja.md)
 
-이 저장소에는 W3C 텍스트 레이아웃 요구사항을 기준으로 프런트엔드 화면, 렌더링된 웹페이지, EPUB/전자책, PDF, 스크린샷, 소스 파일의 중국어, 일본어, 한국어 텍스트 레이아웃을 감사하는 `cjk-layout-audit` Codex skill 이 포함되어 있습니다.
+이 저장소에는 W3C 텍스트 레이아웃 요구사항을 기준으로 프런트엔드 화면, 렌더링된 웹페이지, EPUB/전자책, PDF, 스크린샷, 소스 파일의 중국어, 일본어, 한국어 텍스트 레이아웃을 감사하는 `cjk-layout-audit` agent skill 이 포함되어 있습니다.
 
 이 skill 은 다음 W3C 문서를 기반으로 합니다.
 
@@ -20,7 +20,7 @@
 
 ## 사용
 
-Codex 에서 다음과 같이 skill 을 호출합니다.
+Codex 같은 agent runtime 에서 다음과 같이 skill 을 호출합니다.
 
 ```text
 Use $cjk-layout-audit to audit this CJK webpage or ebook for W3C text layout issues.
@@ -47,7 +47,7 @@ python3 -B cjk-layout-audit/scripts/cjk_layout_probe.py --json path/to/file.html
 PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile cjk-layout-audit/scripts/cjk_layout_probe.py
 ```
 
-Python 의존성이 준비되어 있으면 공식 skill validator 를 실행할 수 있습니다.
+Python 의존성이 준비되어 있으면 Codex-compatible skill validator 를 실행할 수 있습니다.
 
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py cjk-layout-audit
