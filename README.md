@@ -34,3 +34,17 @@ Use $cjk-layout-audit to audit this CJK webpage or ebook against W3C text layout
 For larger audits, provide the target URL, local files, screenshots, ebook/PDF, expected language, and the devices or page sizes you care about.
 
 The audit should return concrete findings with affected content, evidence, W3C mapping, impact, and remediation.
+
+## Codex Plugin
+
+Install from GitHub:
+
+```bash
+codex plugin marketplace add sichengchen/cjk-layout-audit-skill
+```
+
+Or install from a local checkout:
+
+```bash
+codex plugin marketplace add /path/to/cjk-layout-audit-skill
+```
