@@ -1,0 +1,4 @@
+interface:
+  display_name: "CJK Layout"
+  short_description: "Build CJK text layout with W3C guidance"
+  default_prompt: "Use $cjk-layout to implement this Chinese, Japanese, or Korean text layout according to W3C layout requirements."

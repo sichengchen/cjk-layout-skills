@@ -1,10 +1,13 @@
-# CJK テキストレイアウト監査 Agent Skill
+# CJK テキストレイアウト Agent Skills
 
 [English](README.md) | [繁體中文](README.zh-Hant.md) | [简体中文](README.zh-Hans.md) | [한국어](README.ko.md)
 
-`cjk-layout-audit` は、中国語・日本語・韓国語のテキストレイアウトを監査する agent skill です。対象は、Web ページ、frontend app、電子書籍、PDF、スクリーンショット、ソースからレンダリングされるコンテンツです。
+この repository には、中国語・日本語・韓国語のテキストレイアウト向け agent skill が 2 つ含まれます。
 
-可視 CJK テキストの可読性、折り返し、スペーシング、W3C 文字組版要件との整合性を確認します。
+- `cjk-layout`: W3C JLReq、CLReq、KLReq に沿って CJK テキストレイアウトを設計・実装するための知識を coding agent に与えます。
+- `cjk-layout-audit`: Web ページ、frontend app、電子書籍、PDF、スクリーンショット、ソースからレンダリングされる可視 CJK テキストレイアウトを監査します。
+
+レイアウトを構築または修正する場合は `cjk-layout` を使用します。可視出力を確認し、証拠に基づく指摘を作成する場合は `cjk-layout-audit` を使用します。
 
 ## 対応標準
 
@@ -12,7 +15,7 @@
 - [CLReq：中文排版需求](https://www.w3.org/TR/clreq/)
 - [KLReq：한국어 텍스트 레이아웃 및 타이포그래피를 위한 요구사항](https://www.w3.org/TR/klreq/)
 
-## 監査項目
+## 対象項目
 
 - 言語指定と locale metadata
 - 横組み、縦組み、書字方向の混在
@@ -25,13 +28,15 @@
 
 ## 使用方法
 
-この skill に対応した agent runtime で、次の prompt を入力します。
+これらの skills に対応した agent runtime で、次の prompt を入力します。
 
 ```text
+$cjk-layout を使って、この中国語・日本語・韓国語レイアウトを W3C の文字組版要件に沿って実装してください。
+
 $cjk-layout-audit を使って、この CJK Web ページまたは電子書籍を W3C の文字組版要件に照らして監査してください。
 ```
 
-監査範囲が大きい場合は、対象 URL、ローカルファイル、スクリーンショット、電子書籍または PDF、想定言語、確認対象のデバイスまたはページサイズを指定します。
+実装作業では、対象言語、locale、UI surface、書字方向、レンダリング媒体を指定してください。監査範囲が大きい場合は、対象 URL、ローカルファイル、スクリーンショット、電子書籍または PDF、想定言語、確認対象のデバイスまたはページサイズを指定します。
 
 監査結果として、具体的な指摘、対象箇所、証拠、W3C 要件との対応、影響、修正方法を返します。
 

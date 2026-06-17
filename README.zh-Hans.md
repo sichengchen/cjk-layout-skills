@@ -1,10 +1,13 @@
-# CJK 文字排版审查 Agent Skill
+# CJK 文字排版 Agent Skills
 
 [English](README.md) | [繁體中文](README.zh-Hant.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-`cjk-layout-audit` 是用于审查中文、日文与韩文文字排版的 agent skill。适用对象包括网页、frontend app、电子书、PDF、截图，以及由源代码渲染出的内容。
+本 repository 包含两个中文、日文与韩文文字排版 agent skill：
 
-该 skill 用于检查可见 CJK 文本的可读性、换行、间距，以及与 W3C 文字排版需求的一致性。
+- `cjk-layout`：教 coding agent 如何按照 W3C JLReq、CLReq 与 KLReq 设计并实现 CJK 文字排版。
+- `cjk-layout-audit`：审查网页、frontend app、电子书、PDF、截图，以及由源代码渲染出的可见 CJK 文字排版。
+
+构建或修正排版行为时使用 `cjk-layout`。检查可见输出并产出证据型问题报告时使用 `cjk-layout-audit`。
 
 ## 对应标准
 
@@ -12,7 +15,7 @@
 - [CLReq：中文排版需求](https://www.w3.org/TR/clreq/)
 - [KLReq：한국어 텍스트 레이아웃 및 타이포그래피를 위한 요구사항](https://www.w3.org/TR/klreq/)
 
-## 审查项目
+## 涵盖项目
 
 - 语言与 locale metadata
 - 横排、竖排与书写方向混排
@@ -25,13 +28,15 @@
 
 ## 使用方式
 
-在支持此 skill 的 agent runtime 中，输入以下 prompt：
+在支持这些 skills 的 agent runtime 中，输入以下 prompt：
 
 ```text
+使用 $cjk-layout 按照 W3C 文字排版需求实现这个中文、日文或韩文版面。
+
 使用 $cjk-layout-audit 审查这个 CJK 网页或电子书，检查是否符合 W3C 文字排版需求。
 ```
 
-如果审查范围较大，请指定目标 URL、本地文件、截图、电子书或 PDF、预期语言，以及需要检查的设备或页面尺寸。
+如果要实现排版，请指定目标语言、locale、UI surface、书写方向与渲染媒介。如果审查范围较大，请指定目标 URL、本地文件、截图、电子书或 PDF、预期语言，以及需要检查的设备或页面尺寸。
 
 审查结果将返回具体问题、受影响范围、证据、对应的 W3C 需求、影响与修正建议。
 
