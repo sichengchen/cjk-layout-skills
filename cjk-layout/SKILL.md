@@ -1,6 +1,7 @@
 ---
 name: cjk-layout
-description: Teach and guide implementation of Chinese, Japanese, and Korean text layout in code according to W3C CLReq, JLReq, and KLReq. Use when designing, building, fixing, or reviewing UI, HTML, CSS, EPUB, PDF, canvas, design-system, or frontend typography behavior for CJK text: writing modes, line breaking, punctuation, ruby or annotations, emphasis marks, mixed Latin/CJK content, fonts, spacing, justification, forms, and page or book layout. For evidence-driven defect reports or broad rendered audits, use cjk-layout-audit instead.
+description: >-
+  Teach and guide implementation of Chinese, Japanese, and Korean text layout in code according to W3C CLReq, JLReq, and KLReq. Use when designing, building, fixing, or reviewing UI, HTML, CSS, EPUB, PDF, canvas, design-system, or frontend typography behavior for CJK text: writing modes, line breaking, punctuation, ruby or annotations, emphasis marks, mixed Latin/CJK content, fonts, spacing, justification, forms, and page or book layout. For evidence-driven defect reports or broad rendered audits, use cjk-layout-audit instead.
 ---
 
 # CJK Layout
